@@ -1,0 +1,10 @@
+{
+  "short_name": "SignAI",
+  "name": "Conversational Sign Language AI Portal",
+  "icons": [],
+  "start_url": "index.html",
+  "background_color": "#f4f6f9",
+  "theme_color": "#1a73e8",
+  "display": "standalone",
+  "orientation": "portrait"
+}
