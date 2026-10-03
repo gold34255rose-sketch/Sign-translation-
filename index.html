@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Conversational Sign Language AI</title>
+    <!-- Link External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Web App Manifest -->
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <!-- PAGE 1: WELCOME PAGE -->
+    <div id="page-welcome" class="page">
+        <div class="exhibition-badge">Exhibition Live Demo</div>
+        <h1>Conversational Sign Language AI</h1>
+        <p>An assistive computer vision portal designed to interpret complex contextual sign expressions into clear vocal speech sentences.</p>
+        <button class="btn" id="btn-start">Launch Camera Workspace</button>
+    </div>
+
+    <!-- PAGE 2: CAMERA ACCESS PERMISSION PAGE -->
+    <div id="page-permission" class="page">
+        <h1>Permission Request</h1>
+        <p>This demo maps tracking coordinates over your fingers. Please grant webcam permissions to initialize the deep parsing nodes.</p>
+        <button class="btn" id="btn-allow">Allow Camera Access</button>
+        <button class="btn btn-secondary" id="btn-cancel">Cancel</button>
+    </div>
+
+    <!-- PAGE 3: MAIN TRANSLATOR INTERFACE -->
+    <div id="page-translator" class="page">
+        <span class="status-pill" id="status-text">Initializing Systems...</span>
+        
+        <div id="camera-container">
+            <span id="video-fallback-msg">Loading Video Stream...</span>
+            <video id="webcam" autoplay playsinline muted></video>
+        </div>
+
+        <div class="result-box">
+            <div class="label-heading">Translated Sentence:</div>
+            <div id="translation-output" class="translation-text">...</div>
+        </div>
+
+        <div class="action-grid">
+            <button class="btn" id="action-btn">Interpret Phrase & Speak</button>
+            <button class="btn btn-secondary" id="next-btn" style="display:none;">Next Sentence</button>
+            <button class="btn btn-secondary" id="btn-home">Back to Home Page</button>
+            <button class="btn btn-danger" id="btn-exit">Exit Demo</button>
+        </div>
+    </div>
+
+    <!-- PAGE 4: EXIT PAGE -->
+    <div id="page-exit" class="page">
+        <h1>Demo Concluded</h1>
+        <p>System tracking interfaces closed successfully. Tap below to refresh the interactive dashboard pipeline.</p>
+        <button class="btn" id="btn-restart">Re-initialize Project</button>
+    </div>
+
+    <!-- Link JavaScript Application Layer -->
+    <script src="script.js"></script>
+</body>
+  </html>
+  
