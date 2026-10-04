@@ -159,3 +159,36 @@ video {
     margin-top: 15px; 
     width: 100%;
 }
+/* Custom Interactive Gesture Nodes Layout Grid */
+.gesture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.gesture-node-btn {
+    background-color: #ffffff;
+    color: #444;
+    border: 1px solid #ced4da;
+    padding: 10px 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: all 0.2s ease;
+}
+
+.gesture-node-btn:active {
+    transform: scale(0.97);
+}
+
+.selected-node {
+    background-color: #1aa260 !important;
+    color: white !important;
+    border-color: #1aa260 !important;
+    box-shadow: 0 4px 8px rgba(26, 162, 96, 0.3) !important;
+ }
+ 
